@@ -1,3 +1,8 @@
+## Links
+
+AWS S3 Website: http://ikh-cloudx.s3-website.eu-central-1.amazonaws.com
+Cloudfront deployed and invalidated by serverless-finch and single-page-app-plugin: https://d3vc4wpvqeylwq.cloudfront.net
+
 # Shop Angular Cloudfront
 
 Angular version: ~12.
