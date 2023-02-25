@@ -1,5 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use "@angular/material" as mat;
+
+@include mat.core();
+@include mat.strong-focus-indicators(
+  (
+    border-style: dotted,
+    border-width: 4px,
+    border-radius: 2px,
+  )
+);
+
+$my-primary: mat.define-palette(mat.$light-blue-palette, 800);
+$my-secondary: mat.define-palette(mat.$indigo-palette, 400);
+$my-accent: mat.define-palette(mat.$amber-palette, 700);
+$my-typography: mat.define-typography-config(
+  $font-family: "Open Sans",
+);
+
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      secondary: $my-secondary,
+      accent: $my-accent,
+    ),
+    typography: $my-typography,
+  )
+);
+
+@include mat.all-component-themes($my-theme);
+@include mat.strong-focus-indicators-theme(#ffa000);
+
 html,
 body {
   height: 100%;

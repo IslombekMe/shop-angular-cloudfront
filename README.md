@@ -1,3 +1,8 @@
+## Links
+
+AWS S3 Website: http://pokestore-cloudx.s3-website-us-east-1.amazonaws.com/
+Cloudfront deployed and invalidated by serverless-finch and single-page-app-plugin: https://d20i519430gk61.cloudfront.net
+
 # Shop Angular Cloudfront
 
 Angular version: ~12.
